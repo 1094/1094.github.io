@@ -7,7 +7,7 @@ body {
 	flex-basis: 100%;
 	align-items: center;
 	color: rgba(0, 0, 0, 0.35);
-	font-size: 20px;
+	font-size: 29px;
 	margin: 8px 0px;
 }
 .hr-sect::before, .hr-sect::after {
@@ -23,9 +23,7 @@ body {
 .container {
   position: relative;
   float: left;
-  margin: 5px; /*
-  border: 3px solid #818181;
-  background: #818181; */
+  margin: 5px;
   width: 90px;
   height: 150px;
 }
