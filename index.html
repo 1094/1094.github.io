@@ -5,7 +5,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
 <div class="hr-sect">Sir's Reading List</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'yet')" id="defaultOpen">Not Yet</button>
+  <button class="tablinks" onclick="openTab(event, 'read')">Finished</button>
+</div>
+
+<div id='yet' class="tabcontent"> <!-- START OF "NOT YET" -->
 
 <div class="container">
 <img src="images/001.jpg" class="cover">
@@ -83,11 +91,6 @@
 </div>
 
 <div class="container">
-<img src="images/016.jpg" class="cover">
-<div class="middle"><div class="text">R/2020/06</div></div>
-</div>
-
-<div class="container">
 <img src="images/017.jpg" class="cover">
 <div class="middle"><div class="text">017</div></div>
 </div>
@@ -110,21 +113,6 @@
 <div class="container">
 <img src="images/021.jpg" class="cover">
 <div class="middle"><div class="text">021</div></div>
-</div>
-
-<div class="container">
-<img src="images/022.jpg" class="cover">
-<div class="middle"><div class="text">2020/07</div></div>
-</div>
-
-<div class="container">
-<img src="images/023.jpg" class="cover">
-<div class="middle"><div class="text">2020/07</div></div>
-</div>
-
-<div class="container">
-<img src="images/024.jpg" class="cover">
-<div class="middle"><div class="text">2020/07</div></div>
 </div>
 
 <div class="container">
@@ -375,11 +363,6 @@
 <div class="container">
 <img src="images/074.jpg" class="cover">
 <div class="middle"><div class="text">074</div></div>
-</div>
-
-<div class="container">
-<img src="images/075.jpg" class="cover">
-<div class="middle"><div class="text">2020/06</div></div>
 </div>
 
 <div class="container">
@@ -1416,13 +1399,62 @@
 <div class="middle"><div class="text">282</div></div>
 </div>
 
-<!--
+</div> <!-- END OF "NOT YET" -->
+
+<div id="read" class="tabcontent"> <!-- START OF "FINISHED" -->
+
+<div class="container">
+<img src="images/075.jpg" class="cover">
+<div class="middle"><div class="text">2020/06</div></div>
+</div>
+
+<div class="container">
+<img src="images/016.jpg" class="cover">
+<div class="middle"><div class="text">R/2020/06</div></div>
+</div>
+
+<div class="container">
+<img src="images/022.jpg" class="cover">
+<div class="middle"><div class="text">2020/07</div></div>
+</div>
+
+<div class="container">
+<img src="images/023.jpg" class="cover">
+<div class="middle"><div class="text">2020/07</div></div>
+</div>
+
+<div class="container">
+<img src="images/024.jpg" class="cover">
+<div class="middle"><div class="text">2020/07</div></div>
+</div>
+
+</div> <!-- END OF "FINISHED" -->
+
+<!-- TEMPLATE
+
 <div class="container">
 <img src="images/X.jpg" class="cover">
 <div class="middle"><div class="text">###</div></div>
 </div>
 
 -->
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>
