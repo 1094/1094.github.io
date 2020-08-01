@@ -6,7 +6,7 @@
 
 body {
 	background: #D8D8D8;
-	font-family: aywr;
+	font-family: 'aywr';
 }
 
 .hr-sect {
@@ -80,6 +80,7 @@ body {
 	overflow: hidden;
 	border: 1px solid #ccc;
 	background-color: #f1f1f1;
+	font-family: 'aywr';
 }
 
 /* Style the buttons inside the tab */
@@ -92,7 +93,7 @@ body {
 	padding: 14px 16px;
 	transition: 0.3s;
 	font-size: 17px;
-	font-family: aywr;
+	font-family: 'aywr';
 }
 
 /* Change background color of buttons on hover */
