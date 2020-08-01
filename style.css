@@ -1,5 +1,12 @@
+/* Fonts */
+@font-face {
+  font-family: AYWR;
+  src: url(fonts/a-year-without-rain-nerd-font.ttf);
+}
+
 body {
 	background: #D8D8D8;
+	font-font: AYWR;
 }
 
 .hr-sect {
@@ -103,24 +110,4 @@ body {
 	padding: 6px 12px;
 	border: 1px solid #ccc;
 	border-top: none;
-}
-
-/* MOBILE & TABLETS */
-@media only screen
-	and (min-device-width: 375px)
-	and (max-device-width: 812px)
-	and (-webkit-min-device-pixel-ratio: 3)
-	and (orientation: portrait) {
-
-  /* CSS Rules Here */
-
-}
-
-@media only screen
-	and (min-device-width: 375px)
-	and (max-device-width: 812px)
-	and (-webkit-min-device-pixel-ratio: 3)
-	and (orientation: landscape) {
-  /* CSS Rules Here */
-
 }
