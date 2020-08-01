@@ -1,12 +1,12 @@
 /* Fonts */
 @font-face {
-  font-family: AYWR;
+  font-family: aywr;
   src: url(fonts/a-year-without-rain-nerd-font.ttf);
 }
 
 body {
 	background: #D8D8D8;
-	font-font: AYWR;
+	font-family: aywr;
 }
 
 .hr-sect {
