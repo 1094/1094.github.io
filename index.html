@@ -10,10 +10,7 @@
 
 <div class="hr-sect">Sir's Reading List</div>
 
-<div class="tab">
-	<div style="flost:left">
-	<button class="tablinks" onclick="openTab(event, 'home')">Sir's Reading List</button>
-	</div>
+<div class="tab" class="sticky">
 	<div style="float:right">
 	<button class="tablinks" onclick="openTab(event, 'fiction')" id="defaultOpen">Fiction</button>
 	<button class="tablinks" onclick="openTab(event, 'series')">Series</button>
@@ -22,10 +19,6 @@
 </div></div>
 
 <!-- line break --> <p class="clearfix"></p>
-<div id='home' class="tabcontent"> <!-- START OF "HOME" -->
-<p>This is just a list of books I want to read; hovering over a cover will either show you it's number on my list or the month & year the book was completed; the `R` indicates it was or will be a reread.</p>
-</div><!-- eoh -->
-
 <div id='fiction' class="tabcontent"> <!-- START OF "FICTION" -->
 
 <div class="container">
@@ -1129,6 +1122,7 @@
 
 </div> <!-- eor -->
 
+<!-- TABS -->
 <script>
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
@@ -1146,5 +1140,6 @@ function openTab(evt, tabName) {
 document.getElementById("defaultOpen").click();
 </script>
 
+<!-- end page -->
 </body>
 </html>
