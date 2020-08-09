@@ -1,12 +1,639 @@
-/* Fonts */
 @font-face {
-  font-family: aywr;
-  src: url(fonts/a-year-without-rain-nerd-font.ttf);
+	font-family: aywr;
+	src: url(fonts/a-year-without-rain-nerd-font.ttf);
 }
 
 body {
-	background: #D8D8D8;
+	color: black;
+	background: #d8d8d8 url('');
+	background-repeat: repeat;
+	background-position: bottom left;
+	background-attachment: fixed;
 	font-family: 'aywr';
+	margin: 0;
+}
+
+/*containers */
+.wrapper {
+	width: 1250px;
+	margin: 0 auto;
+}
+.main {
+	float: right;
+	background-color: transparent;
+	width: 1080px;
+	padding-top: 30px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bda9d1;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+/* headings */
+h1, h1 a, h1 a:hover {
+	display: block;
+	font-size: 24px;
+	line-height: 24px;
+	font-family: 'aywr';
+	color: #bda9d1;
+	background-color: transparent;
+	padding: 0px;
+	text-align: center;
+	text-transform: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+h2, h3, h4, h2 a, h2 a:hover, h3 a, h3 a:hover, h4 a, h4 a:hover {
+	color: #bda9d1;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: 'aywr';
+	font-weight: normal;
+	text-transform: normal;
+	text-decoration: none;
+}
+
+/* header */
+header {
+	float: left;
+	position: fixed;
+	width: 140px;
+	padding: 56px 15px 0px 15px;
+	text-align: center;
+	background-color: #f1f1f1;
+	min-height: 100%;
+}
+
+.profile-photo {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+p#description {
+	width: 100%;
+	height: auto;
+	font-size: 11px;
+	line-height: 118%;
+	color: black;
+	text-align: center;
+	background-color: transparent;
+	margin: 0;
+}
+
+nav {
+	width: 140px;
+	color: black;
+	background-color: none
+	padding: 0px;
+}
+
+ul.sidelinks li {
+	color: black;
+}
+
+a.sidelink {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	width: 140px;
+	color: black;
+	background-color: transparent;
+	text-align: center;
+	text-transform: normal;
+	text-decoration: none;
+	display: block;
+	padding: 10px 10px 0px 2px;
+	font-size: 11px;
+	line-height: 20px;
+	font-weight: normal;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+a.sidelink:hover {
+	color: #bda9d1;
+}
+
+/* main post styles */
+.post {
+	width: 250px;
+	height: auto;
+	float: left;
+	position: relative;
+	background-color: #f1f1f1;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.post iframe {
+	display: block;
+	max-width: 100%;
+}
+
+/* adds padding to things in a post */
+.content {
+	padding: 15px;
+	font-size: 11px;
+	line-height: 120%;
+}
+
+/* text post styles */
+.text p {
+	font-size: 11px;
+	line-height: 120%;
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+.text ul {
+	list-style-type: square;
+	font-size: 10px;
+	padding-left: 20px;
+}
+
+blockquote {
+	font-family: 'aywr';
+	color: black;
+	background-color: transparent;
+	font-size: 13px;
+	line-height: 16px;
+	padding: 5px 5px 0px 5px;
+	margin: 1px;
+	text-align: justify;
+	text-indent: -0.3em;
+}
+
+.post img {
+	background-color: none;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	opacity: 1;
+}
+
+.chat {
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.chat .label {
+	font-weight: bold;
+	text-align: right;
+}
+
+.chat li {
+	border-bottom: 0px solid #fff;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.chat li:last-child {
+	border-bottom: none;   
+}
+
+.answer img {
+	width: 100%;
+	height: auto;
+	margin-left: 0px;
+}
+
+a img.credit {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.imgback {
+	background-color: transparent;
+}
+
+.spotify_audio_player {
+	height: 80px;
+}
+
+/* shown on the permalink page; has notes, source, and time posted */
+.perma-info {
+	color: black;
+	background-color: transparent;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: normal;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.perma-info a {
+	color: black;
+	text-decoration: none;
+}
+
+.perma-info a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/* notes stuff */
+ol.notes {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.note {
+	padding: 1px 5px;
+}
+
+.note:last-child {
+	border-bottom: 0;
+	margin-bottom: 15px;
+}
+
+.note blockquote {
+	color: black;
+	background-color: transparent;
+	border: none;
+}
+
+.post .index-info {
+background-color: rgba({RGBcolor:Background}, 1);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 250px;
+	height: 100%;
+	padding: 10px;
+	-webkit-opacity: 0.12;
+	-moz-opacity: 0.12;
+	opacity: 0.12;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-ms-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+.post:hover .index-info {
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+}
+
+/* remove blank space from bottom of photoset posts */
+iframe.photoset {
+	display: block;
+}
+
+/* line */
+hr {
+	clear: both;
+	border: 0;
+	border-bottom: 1px solid rgba({RGBcolor:Text}, 0.25);
+	margin: 15px 0px;
+}
+
+.tags {
+	display: block;
+	margin-top: 10px;
+	margin-left: -5px;
+}
+
+.tags a, .tags a:hover {
+	color: #bda9d1;
+	font-size: 12px;
+	line-height: 120%;
+	padding: 0px 3px 0px 0px;
+	text-decoration: none;
+}
+
+/* fix height of element with floats inside */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* remove border on linked images in IE */
+a img {
+	border: 0;   
+}
+
+/* you shouldn't see this div if infinite scroll is on */
+div.pagination {
+	background-color: none;
+	margin-bottom: 10px;
+	clear: both;
+	text-align: center;
+}
+
+/* previous and next page buttons */
+#previous, #next, .page-info {
+	color: black;
+	font-family: 'aywr';
+	font-size: 11px;
+	background: transparent; 
+	font-weight: normal;
+	padding: 5px 7px 5px 7px;
+}
+
+#previous:hover, #next:hover {
+	color: #bda9d1;
+}
+
+/*stylized.adorablethemes.com*/
+@media screen and (max-width:1275px) {
+		.wrapper {
+		width: 980px;
+		}
+
+		.main {
+		width: 810px;
+		}
+}
+
+@media screen and (max-width:1010px) {
+		.wrapper {
+		width: 710px;
+		}
+
+		.main {
+		width: 540px;
+		}
+}
+
+@media screen and (max-width:740px) {
+		.wrapper {
+		width: 440px;
+		}
+
+		.main {
+		width: 270px;
+		}
+}
+
+@media screen and (max-width:460px) {
+		.wrapper {
+		width: 270px;
+		}
+
+		.main {
+		width: 270px;
+		padding-top: 10px;
+		margin-left: 0px;
+		}
+
+		header {
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		position: static;
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 25px 15px 15px 15px;
+		}
+
+		p#description {
+		width: 90%;
+		margin: 0 auto;
+		}
+
+		nav {
+		width: 250px;
+		margin: 0 auto;
+		padding: 0px;
+		}
+
+		a.sidelink {
+		width: 125px;
+		}
+}
+
+/* special styling for permalink pages */
+.wrapper {
+	width: 520px;
+	margin-left: 265px;
+}
+
+.main {
+	width: 520px;
+	padding-top: 40px;
+}
+
+.post {
+	float: none;
+	padding: 0px;
+	width: 500px;
+}
+
+.post img {
+	width: 500px;
+	height: auto;
+}
+
+.post:hover .photo-post-photo {
+	transform: none;
+}
+
+@media screen and (max-width:785px) {
+		.wrapper {
+		width: 270px; 
+		margin: 0 auto;
+		}
+
+		.main {
+		width: 270px; 
+		padding-top: 10px;
+		margin-left: 0px;
+		}
+
+		.post {
+		width: 250px;
+		float: left;
+		position: relative;
+		overflow: hidden;
+		}
+
+		.post img {
+		width: 250px;  	 
+		}
+}
+
+@media screen and (max-width:630px) {
+		.wrapper {
+		width: 270px;
+		}
+
+		.main {
+		width: 270px;
+		padding-top: 10px;
+		margin-left: 0px;
+		}
+
+		header {
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		position: static;
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 25px 15px 15px 15px;
+		}
+
+		p#description {
+		width: 90%;
+		margin: 0 auto;
+		}
+
+		nav {
+		width: 250px;
+		margin: 0 auto;
+		padding: 0px;
+		}
+
+		a.sidelink {
+		width: 125px;
+		}
+}
+
+/* make sure avatars don't get huge */
+img.avatar {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	display: inline;
+	margin-right: 5px;
+	padding: 1px;
+	border-radius: 50%;
+}
+
+img.avatar-ask {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	display: inline;
+	margin-top: 10px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+/* MY SHIT */
+audio {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	font-family: 'aywr';
+	width: auto;	
+	position: fixed;
+	z-index: 999;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	font-family: 'aywr';
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+/* book cover images and boxes */
+.book {
+	position: relative;
+	float: left;
+	margin: 5px;
+	width: 90px;
+	height: 150px;
+}
+
+.clearfix {
+	overflow:auto;
+	clear: left;
+}
+
+.cover {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	border-radius: 2px;
+}
+
+.book:hover .cover {
+	opacity: 0.6;
+}
+
+.book:hover .middle {
+	opacity: 1;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 55%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text {
+	background-color: #EAD6FF;
+	color: black;
+	font-size: 11px;
+	padding: 5px;
 }
 
 .sect {
@@ -38,145 +665,4 @@ body {
 	font-size: 0px;
 	line-height: 0px;
 	margin: 0px 16px;
-}
-
-/* book cover images and boxes */
-.book {
-	position: relative;
-	float: left;
-	margin: 5px;
-	width: 90px;
-	height: 150px;
-}
-
-.clearfix {
-	overflow:auto;
-	clear: left;
-}
-
-.cover {
-	opacity: 1;
-	display: block;
-	width: 100%;
-	height: auto;
-	transition: .5s ease;
-	backface-visibility: hidden;
-}
-
-.book:hover .cover {
-	opacity: 0.6;
-}
-
-.book:hover .middle {
-	opacity: 1;
-}
-
-.middle {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	top: 55%;
-	left: 55%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-.text {
-	background-color: #EAD6FF;
-	color: black;
-	font-size: 11px;
-	padding: 5px;
-}
-
-/* SIDEBAR */
-
-ul.menu {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 110px;
-	height: 98%;
-	position: fixed;
-	overflow: auto;
-	background-color: #f1f1f1;
-}
-
-li.menu a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-
-li.menu a:hover {
-	background-color: #EAD6FF;
-	color: black;
-}
-
-li.sub a {
-	display: block;
-	color: white;
-	background-color: #BDA9D1;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-
-li.sub a:hover {
-	background-color: #787080;
-	color: white;
-}
- 
-
-/* CONTENT */
-.content {
-	margin-left: 120px;
-	padding-left: 5px;
-}
-
-
-/* rM pages */
-
-
-div.polaroid {
-	width: 85%;
-	background-color: #EAD6FF;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 15px;
-}
-
-div.polaroid:hover {
-  box-shadow: 4px 8px 16px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-div.label {
-	text-align: center;
-	padding: 10px 20px;
-
-}
-
-/* DOWNLOAD Button and LINK */
-.btn {
-	background-color: #BDA9D1;
-	border: none;
-	padding: 5px 10px;
-	cursor: pointer;
-	border-radius: 8px;
-}
-
-.btn:hover {
-	background-color: #F1F1F1;
-	border-radius: 8px;
-}
-
-.btn a {
-	text-decoration: none;
-	padding: 5px;
-	color: white;
-}
-
-.btn a:hover {
-	color: black;
 }
