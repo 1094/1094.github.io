@@ -666,3 +666,44 @@ audio {
 	line-height: 0px;
 	margin: 0px 16px;
 }
+
+div.label {
+	text-align: center;
+	padding: 10px 20px;
+}
+
+/* DOWNLOAD Button and LINK */
+.btn {
+	background-color: #BDA9D1;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.btn:hover {
+	background-color: #F1F1F1;
+	border-radius: 8px;
+}
+
+.btn a {
+	text-decoration: none;
+	padding: 5px;
+	color: white;
+}
+
+.btn a:hover {
+	color: black;
+}
+
+/* AUDIO PLAYERS */
+audio {
+	font-size: 10px;
+	width: 98%;
+}
+
+.alabel {
+	font-size: 10px;
+	text-align: center;
+	padding: 10px 20px;
+}
