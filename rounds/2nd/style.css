@@ -1,7 +1,18 @@
 @font-face {
 	font-family: aywr;
-	src: url(fonts/a-year-without-rain-nerd-font.ttf);
+	src: url(fonts/AYearWithoutRain.ttf);
 }
+
+@font-face {
+	font-family: ad;
+	src: url(fonts/ArchitectsDaughter.ttf);
+}
+
+@font-face {
+	font-family: doj;
+	src: url(fonts/DropsOfJupiter.ttf);
+}
+/* KG Fonts make me so happy!! I love that she shares :) */
 
 body {
 	color: black;

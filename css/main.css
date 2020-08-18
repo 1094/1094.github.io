@@ -1,0 +1,84 @@
+@font-face {
+	font-family: aywr;
+	src: url(../fonts/AYearWithoutRain.ttf);
+}
+
+@font-face {
+	font-family: ad;
+	src: url(../fonts/ArchitectsDaughter.ttf);
+}
+
+@font-face {
+	font-family: doj;
+	src: url(../fonts/DropsOfJupiter.ttf);
+}
+/* KG Fonts make me so happy!! I love that she shares :) */
+
+body {
+	font-family: 'aywr';
+	background-color: #f1f1f1;
+	}
+
+.content {
+	padding-top: 60px;
+	padding-bottom: 50px;
+	}
+
+/* HR Headers */
+.sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 3em;
+	margin: 8px 0px;
+	color: #787080;
+	}
+
+.lect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 1.5em;
+	margin: 8px 0px;
+	color: #787080;
+	}
+
+
+.sect::before, .sect::after, .lect::before, .lect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 16px;
+	}
+
+/* download buttons */
+.btn {
+	background-color: #BDA9D1;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.btn:hover {
+	background-color: #F1F1F1;
+	border-radius: 8px;
+}
+
+.btn a {
+	text-decoration: none;
+	padding: 5px;
+	color: white;
+	font-family: 'aywr';
+}
+
+.btn a:hover {
+	color: black;
+}
+
+/* audio player */

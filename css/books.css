@@ -1,0 +1,49 @@
+/* book cover images and boxes */
+.book {
+        position: relative;
+        float: left;
+        margin: 5px;
+        width: 90px;
+        height: 150px;
+}
+
+.clearfix {
+        overflow:auto;
+        clear: left;
+}
+
+.cover {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-radius: 3px;
+}
+
+.book:hover .cover {
+        opacity: 0.6;
+}
+
+.book:hover .middle {
+        opacity: 1;
+}
+
+.middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 55%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+.text {
+        background-color: #EAD6FF;
+        color: black;
+        font-size: 11px;
+        padding: 5px;
+}

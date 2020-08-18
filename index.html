@@ -1,98 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Creativity born of boredom.</title>
 <link rel="shortcut icon" href="images/favicon.png"/>
-<link rel="apple-touch-icon" href="images/favicon.png"/>
 <meta name="description" content="Sir got bored and made some stuff."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="fonts/fontawesome/css/all.css" rel="stylesheet">
-
+<link rel="apple-touch-icon" href="images/favicon.png"/>
+<link rel="stylesheet" text="text/css" href="css/main.css">
+<link rel="stylesheet" text="text/css" href="css/menu.css">
+<link rel="stylesheet" text="text/css" href="css/content.css">
 </head>
 
 <body>
 
-<!-- sidebar -->    
-<header class="clearfix">
+<div class="menu"><ul>
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropbtn">&#11088;</a>
+<div class="dropdown-content">
+	<a href="pages/books.html">Reading List</a>
+	<a href="pages/zen.html">Zen Doodles</a>
+	<a href="pages/words.html">Word Doodles</a>
+	<a href="pages/rm-s.html">rM Splash Screens</a>
+	<a href="pages/rm-t.html">rM Templates</a>
+	<a href="pages/color.html">Coloring Pages</a>
+	<a href="pages/poetry.html">Poetic Wondering</a>
+	<a href="pages/fic.html">Short Stories</a>
+	<a href="pages/bash.html">Bash Scripts</a>
+</div></li> <!-- end dropdown -->
+<li><a href class="title">Creativity born of boredom.</a></li>
+</ul></div>
+<!-- end nav -->
 
-<center><a href="index.html"><img class="profile-photo" src="images/favicon.png"></a></center>
+<div class="content">
+<div class="grid_items">
 
-<h1>Creativity born of boredom</h1>
-
-<hr /><nav>   
-<ul class="sidelinks">
-<li><a class="sidelink" href="index.html">&#127969; Home</a></li>
-<li><a class="sidelink" href="pages/reading-list.html">&#128218; Reading List</a></li>
-<li><a class="sidelink" href="pages/remarkable.html">&#127924; reMarkable PNGs</a></li>
-<li><a class="sidelink" href="pages/word-art.html">&#128172; Word Art</a></li>
-<li><a class="sidelink" href="pages/zen.html">&#11088; Zen Doodles</a></li>
-<li><a class="sidelink" href="pages/coloring.html">&#128396; Coloring Pages</a></li>
-<li><a class="sidelink" href="pages/poetic.html">&#128221; Poetic Wondering</a></li>
-<li><a class="sidelink" href="pages/story.html">&#128466; Stories</a></li>
-<li><a class="sidelink" href="pages/codish.html">&#128421; Bash Script</a></li>
-<li><a class="sidelink" href="pages/quotes.html">&#128483; Quotes</a></li>
-<li><a class="sidelink" href="pages/http://stylizedthemes.tumblr.com/" target="_blank" title="The original theme!!">&#169; The Site's CSS</a></li>
-</ul></nav>
-</header>
-
-<div class="wrapper">
-
-<div class="main">
-
-<ul id="posts">
-
-<li class="post panorama"><div class="content">
+<div class="grid_item">
 <a href="pages/reading-list.html">
 <img src="images/logo/reading-list.png"></a>
-<p>I'd like to read more and someone awesome gave me a great idea for my "reading list" and that's what this is.</p>
-</div></li>
+<p class="label">I'd like to read more and someone awesome gave me a great idea for my "reading list" and that's what this is.</p>
+</div>
 
-<li class="post audio"><div class="content">
+<div class="grid_item">
 <h3>Rainbows & Kittens</h3>
 <audio controls><source src="sounds/rainbows.mp3" type="audio/mpeg">Oops, your browser sucks.</audio> 
-</div></li>
+</div>
 
-<li class="post panorama"><div class="content">
-<a href="pages/remarkable.html">
-<img src="images/logo/rm-stuff.png"></a>
-<p>Here are some templates and splash screens I've made for my reMarkable paper tablet. Feel free to download and use!</p>
-</div></li>
+<div class="grid_item">
+<img src="images/logo/rm-stuff.png">
+<p class="label">Here are some <a href="pages/rm-t.html">templates</a> and <a href="rm-s.html">splash screens</a> I've made for my reMarkable paper tablet. Feel free to download and use!</p>
+</div>
 
-<li class="post panoram"><div class="content">
+<div class="grid_item">
 <a href="pages/word-art.html">
 <img src="images/logo/word-art.png"></a>
-<p>I like quotes and when I got my reMarkable I started playing with them as in making poster like versions of the words.</p>
-</div></li>
+<p class="label">I like quotes and when I got my reMarkable I started playing with them as in making poster like versions of the words.</p>
+</div>
 
-<li class="post photo"><div class="content">
+<div class="grid_item">
 <a href="pages/zen.html">
 <img src="images/logo/zen-doodles.png"></a>
-<p>So, I've learned about Zen Doodles. I haven't done many of them, instead, I've made a bunch of lines. Be warned: They can mess with your eyes a bit.</p>
-</div></li>
+<p class="label">So, I've learned about Zen Doodles. I haven't done many of them, instead, I've made a bunch of lines. Be warned: They can mess with your eyes a bit.</p>
+</div>
 
-<li class="post audio"><div class="content">
+<div class="grid_item">
 <h3>No Time</h3>
 <audio controls><source src="sounds/no-time_bored-random-je4nsly.mp3" type="audio/mpeg">Oops, your browser sucks.</audio> 
-</div></li>
+</div>
 
-<li class="post photo"><div class="content">
+<div class="grid_item">
 <a href="pages/coloring.html">
 <img src="images/logo/coloring.png"></a>
-<p>I've been doing quite a bit of digital coloring and tracing. Here's a nice sample of that time consuming labor.</p>
-</div></li>
+<p class="label">I've been doing quite a bit of digital coloring and tracing. Here's a nice sample of that time consuming labor.</p>
+</div>
 
-<li class="post photo"><div class="content">
+<div class="grid_item">
 <a href="pages/codish.html">
 <img src="images/logo/bash-script.png"></a>
-<p>Here be some bashing scripting I've done in an attempt to learn (and make my life a bit easier).</p>
-</div></li>
+<p class="label">Here be some bashing scripting I've done in an attempt to learn (and make my life a bit easier).</p>
+</div>
 
-</ul> <!-- end posts -->
-
-</div> <!-- end posts -->
-</div> <!-- end main -->
-</div> <!-- end wrapper -->
+</div> <!-- end grid -->
+</div> <!-- end content -->
 
 </body>
 </html>
