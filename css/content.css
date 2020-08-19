@@ -12,12 +12,12 @@
 	display: grid;
 	grid-template-columns: 98%;
 	grid-column-gap: 0;
-	grid-row-gap: 15px;
+	grid-row-gap: 10px;
 }
 
 .grid_items > div {
     background-color: #bbb;
-    padding: 3%;
+    padding: 2%;
     border-radius: 4px;
     border: 3px solid #ccc;
 }
@@ -56,20 +56,20 @@
 @media only screen and (min-width: 640px) {
   .grid_items {
     grid-template-columns: 47.5% 47.5%;
-    grid-column-gap: 5%;
-    grid-row-gap: 15px;
+    grid-column-gap: 4%;
+    grid-row-gap: 10px;
   }
   .grid_items > div {
-    padding: 3%;
+    padding: 2%;
   }
 }
 
 @media only screen and (min-width: 981px) {
   .grid_items {
     grid-template-columns: 30% 30% 30%;
-    grid-row-gap: 3%;
+    grid-row-gap: 10px;
   }
   .grid_items > div {
-    padding: 3%;
+    padding: 2%;
   }
 }

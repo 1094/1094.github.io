@@ -1,11 +1,13 @@
 .menu {
 	background-color: cornflowerblue;
 	top: 0;
+	left: 0;
 	position: fixed;
 	width: 100%;
 	margin: 0; 
 	padding: 0;
 	z-index: 9999;
+	border-radius: 3px;
 	}
 
 /* menu */

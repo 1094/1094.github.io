@@ -20,8 +20,18 @@ body {
 	}
 
 .content {
-	padding-top: 60px;
-	padding-bottom: 50px;
+	position: fixed;
+	top: 50px;
+	height: 90%;
+	width: 99%;
+	overflow-y: scroll;
+	bottom: 10px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	}
+
+.content::-webkit-scrollbar {
+	display: none;
 	}
 
 /* HR Headers */
@@ -82,3 +92,4 @@ body {
 }
 
 /* audio player */
+
