@@ -11,6 +11,7 @@
 	padding: 2%;
 	display: grid;
 	grid-template-columns: 98%;
+	grid-template-rows: auto;
 	grid-column-gap: 0;
 	grid-row-gap: 10px;
 }
@@ -29,9 +30,9 @@
 }
 
 .grid_items > div:nth-child(3n) {
-    background-color: #ddd;
+	background-color: #ddd;
 	border-radius: 4px;
-    border: 3px soild #eee;
+	border: 3px soild #eee;
 }
 
 .grid_items > div:nth-child(4n) {
