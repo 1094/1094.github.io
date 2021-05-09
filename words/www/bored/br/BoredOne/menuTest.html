@@ -1,0 +1,81 @@
+<!DOCTYPE html> <html> <head> 
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julee|Cinzel+Decorative' rel='stylesheet' type='text/css'>
+<title>random-menu</title> 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<script type="text/javascript"> 
+/* ================================================================ 
+Copyright (c) 2011 Stu Nicholls - stunicholls.com. All rights 
+reserved.  This script and the associated html may be modified 
+in any way to fit your requirements. 
+=================================================================== */
+
+$(document).ready(function () { timer=0; collapse = 1000; $('.menu').height($('.menu > ul').height());
+
+
+$('.menu li a').mouseover(function (event) { if (this == event.target) { $(this).parent().toggleClass('clicked').children('ul').animate({ width: 'show' }); $(this).siblings().children().removeClass('clicked').find('ul').animate({ width: 'hide' }); $(this).parent().siblings().removeClass('clicked').find('ul').animate({ width: 'hide' }); } }).addClass('fly');
+
+$('.menu li:not(:has(ul)) a').mouseout(function (event) { if (this == event.target) { $(this).parent().removeClass('clicked'); $(this).siblings().children().removeClass('clicked').find('ul').animate({ width: 'hide' }); $(this).parent().siblings().removeClass('clicked').find('ul').animate({ width: 'hide' }); } }).removeClass('fly');
+
+$(".menu").mouseover(function() { clearTimeout(timer); });
+
+$(".menu").mouseout(function() { timer = window.setTimeout(function(){ $('.menu li > a').siblings().children().removeClass('clicked').find('ul').fadeOut(); $('.menu li > a').parent().siblings().removeClass('clicked').find('ul').fadeOut(); }, collapse); });
+
+});
+
+</script>
+
+<style type="text/css"> 
+/* ================================================================ 
+Copyright (c) 2011 Stu Nicholls - stunicholls.com. All rights 
+reserved. This stylesheet and the associated html may be modified
+in any way to fit your requirements.
+=================================================================== */
+
+.menu {position:fixed; bottom:150px; left:0; }
+
+.menu ul {position:absolute; margin:0; padding:0; list-style:none; white-space:nowrap; background:#abc; border:1px solid #fff; padding:10px 0; -o-border-radius: 8px; -ms-border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -o-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -ms-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); } .menu ul ul {display:none; left:100%; margin-top:-33px; margin-left:-5px;}
+
+.menu li {list-style-type: none; font-family: 'Architects Daughter', cursive; font-size:10px; margin:0; padding:5px; display:inline-block; display:inline;}
+
+.menu a {display:block; font-family: 'Cinzel Decorative', cursive; font-size:9px; color:#000; line-height:15px; text-decoration:none; padding:0 20px 0 10px;}
+
+.menu li a.fly {background: url(arrow-right.gif) no-repeat right top;} .menu li:hover > a {background-color:#c60; color:#fff;}
+
+p {font-family: 'Julee', cursive; font-size:15px;}
+
+</style> </head>
+<body>
+<div class="menu">Fav Fan Fic
+<!--OPEN LIST--><ul>
+<!--Level 1--><li><a href="#url">BEST ONE EVER!!!</a>
+<!--OPEN 2--><ul>
+<!--Level 2--><li><a href="http://www.fanfiction.net/s/2949422/1/Alone-Together" target="_blank">Alone, Together by Failte200</a></li>
+<!--CLOSE 2--></ul></li>
+<!--Level 1--><li><a href="#url">Rizzles</a>
+<!--OPEN 2--><ul>
+<!--Level two--><li><a href="http://www.fanfiction.net/s/8091209/1/Synergy-Symbiosis" target="_blank">Synergy & Symbiosis by ArcadiaArden</a></li>
+<!--Level two--><li><a href="http://www.fanfiction.net/s/8013625/1/Run"  target="_blank">Run by ArcadiaArden</a></li>
+<!--CLOSE 2--></ul></li>
+<!--Level 1--><li><a href="#url">Mirandy</a>
+<!--OPEN 2--><ul>
+<!--LEVEL 2--><li><a href="http://www.fanfiction.net/s/6565287/2/Into-the-Fire" target="_blank">Into the Fire by GinStan</a></li>
+<!--Level 2--><li><a href="http://www.fanfiction.net/s/4555371/1/Town-and-Country" target="_blank">Town and Country by xio11</a></li>
+<!--Level 2--><li><a href="http://www.fanfiction.net/s/6701608/1/" target="_blank">On an Altar by bluebear</a></li>
+<!--CLOSE 2--></ul></li>
+<!--Level 1--><li><a href="#url">Fav Quotes</a>
+<!--OPEN 2--><ul>
+<!--Level 2--><li><a href="#url">Anais Nin:</a> And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom</li>
+<!--Level 2--><li><a href="#url">Thomas Wolfe:</a> You are what you are, you know what you know, and there are no words for loneliness, black, bitter, aching loneliness, that gnaws the roots of silence in the night...</li>
+<!--CLOSE 2--></ul></li>
+<!--Level 1--><li><a href="#url">questions?</a>
+<!--OPEN 2--><ul>
+<!--Level 2--><li><iframe frameborder="0" border="0" scrolling="no" width="100%" height="149" allowtransparency="true" src="http://www.tumblr.com/ask_form/bored-random.tumblr.com" style"background-color:transparent; overflow:hidden;"></iframe></li>
+<!--CLOSE 2--></ul></li>
+<!--CLOSE LIST--></ul>
+
+</div>
+</body>
+</html>

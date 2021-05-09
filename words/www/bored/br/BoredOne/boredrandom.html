@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+/*This theme was made by me bored-random.tumblr.com with the help of www.w3.org by combining a number of different themes and codes from Stu Nicholls.*/
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="Author" content="bored-random.tumblr"/>
+/*Fonts*/
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julee|Cinzel+Decorative' rel='stylesheet' type='text/css'>
+<title>bored+random=blog</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<script type="text/javascript"> 
+/* ================================================================ 
+Copyright (c) 2011 Stu Nicholls - stunicholls.com. All rights 
+reserved.  This script and the associated html may be modified 
+in any way to fit your requirements. 
+=================================================================== */
+
+$(document).ready(function () { timer=0; collapse = 1000; $('.menu').height($('.menu > ul').height());
+
+
+$('.menu li a').mouseover(function (event) { if (this == event.target) { $(this).parent().toggleClass('clicked').children('ul').animate({ width: 'show' }); $(this).siblings().children().removeClass('clicked').find('ul').animate({ width: 'hide' }); $(this).parent().siblings().removeClass('clicked').find('ul').animate({ width: 'hide' }); } }).addClass('fly');
+
+$('.menu li:not(:has(ul)) a').mouseout(function (event) { if (this == event.target) { $(this).parent().removeClass('clicked'); $(this).siblings().children().removeClass('clicked').find('ul').animate({ width: 'hide' }); $(this).parent().siblings().removeClass('clicked').find('ul').animate({ width: 'hide' }); } }).removeClass('fly');
+
+$(".menu").mouseover(function() { clearTimeout(timer); });
+
+$(".menu").mouseout(function() { timer = window.setTimeout(function(){ $('.menu li > a').siblings().children().removeClass('clicked').find('ul').fadeOut(); $('.menu li > a').parent().siblings().removeClass('clicked').find('ul').fadeOut(); }, collapse); });
+
+});</script>
+<style type="text/css"> 
+/*Links*/
+a:link {color: #FF0000; text-decoration: underline;}
+a:visited {color: #00FF00; text-decoration: line-through;}
+a:hover {color: #FF00FF; text-decoration: font-family: 'Julee', curvise;}
+a:active {color: #0000FF; font-size: 60%;}
+
+
+/*IE Background */
+ * html body {padding:120px 0 50px 0;} * html #container {height:100%; width:100%;} * html #header {height:120px;} * html #footer {height:50px;}
+
+/*Background*/
+body {margin:0; border:0; padding:0; height:100%; max-height:100%; background:#fff; overflow: hidden;}
+
+#container {font-family:'Architects Daughter', cursive; font-size: 11px; position:fixed; top:120px; left:115px; bottom:50px; right:0; overflow:auto; background:#fff; padding:20px; text-align:left;}
+
+#header {font-family: 'Cinzel Decorative', cursive; font-color:blue; position:absolute; top:0; algin:center; width:100%; height:116px; overflow:hidden; background:#000000; border-bottom:0px; background:url(https://lh6.googleusercontent.com/-H6HvsRVg1Dw/UJ8WtLOSjyI/AAAAAAAAAhg/5MozI6K_kDQ/s577/HeaderImage.png); background-repeat:no-repeat; background-size:100% 100%; -webkit-background-origin:content-box; background-origin:content-box;}
+
+#rightbar {text-align:center; right:0; bottom: 0; background:rgb(237,228,214); position:absolute; bottom:50px; width:25%; height: 60%; font-family:'Julee', cursive; font-size:10px; z-index:1; overflow:auto;}
+
+#footer {position:absolute; bottom:0; left:0; width:100%; height:45px; overflow:hidden; text-align:right; background:#CEE3F6; border-top:1px solid #53829d; font-family:'Julee', cursive; font-size=9px; font-color:#000000;}
+
+/*SIDE MENU*/
+.menu {position:fixed; top:150px; left:0; }
+
+.menu ul {position:absolute; margin:0; padding:0; list-style:none; white-space:nowrap; background:#abc; border:1px solid #fff; padding:10px 0; -o-border-radius: 8px; -ms-border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -o-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -ms-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); } .menu ul ul {display:none; left:100%; margin-top:-33px; margin-left:-5px;}
+
+.menu li {list-style-type: none; font-family: 'Architects Daughter', cursive; font-size:10px; margin:0; padding:5px; display:inline-block; display:inline;}
+
+.menu a {display:block; font-family: 'Cinzel Decorative', cursive; font-size:9px; color:#000; line-height:15px; text-decoration:none; padding:0 20px 0 10px;}
+
+.menu li a.fly {background: url(arrow-right.gif) no-repeat right top;} .menu li:hover > a {background-color:#c60; color:#fff;}
+
+</style>
+</head>
+<body>
+
+<!--HEADER-->
+<div id="header"></div><!--header close-->
+<!--CONTAINER-->
+<div id="container"><p class"container">so.  i am getting better at this.  or i am, at least, figuring some of it out.</p>
+
+
+<iframe frameborder="2" border="5" scrolling="auto" width="100%" height="500" allowtransparency="true" src="http://www.bored-random.tumblr.com/tagged/Rizzles" style"background-color:transparent; overflow:auto;"></iframe>
+
+<!--SIDEBAR-->
+<div class="menu">Fav Fan Fic
+<!--OPEN LIST--><ul>
+<!--Level 1--><li><a href="#url">BEST EVER!!!</a>
+<!--OPEN 2--><ul>
+<!--Level 2--><li><a href="http://www.fanfiction.net/s/2949422/1/Alone-Together" target="_blank">Alone, Together by Failte200</a></li>
+<!--Level 2--><li><a href="http://www.fanfiction.net/s/4448058/1/" target="_blank">Incomprehensible Desire by JustAnotherPseudonym</a></li><!--Level 2--><li><a href="http://www.fanfiction.net/s/8051416/1/" target="_blank">Connection by ArcadiaArden</a></li>
+<!--CLOSE 2--></ul></li>
+<!--Level 1--><li><a href="#url">Rizzles</a>
+<!--OPEN 2--><ul>
+<!--Level two--><li><a href="http://www.fanfiction.net/s/8091209/1/Synergy-Symbiosis" target="_blank">Synergy & Symbiosis by ArcadiaArden</a></li>
+<!--Level two--><li><a href="http://www.fanfiction.net/s/8013625/1/Run"  target="_blank">Run by ArcadiaArden</a></li>
+<!--CLOSE 2--></ul></li>
+<!--Level 1--><li><a href="#url">Mirandy</a>
+<!--OPEN 2--><ul>
+<!--LEVEL 2--><li><a href="http://www.fanfiction.net/s/6565287/2/Into-the-Fire" target="_blank">Into the Fire by GinStan</a></li>
+<!--Level 2--><li><a href="http://www.fanfiction.net/s/4555371/1/Town-and-Country" target="_blank">Town and Country by xio11</a></li>
+<!--Level 2--><li><a href="http://www.fanfiction.net/s/6701608/1/" target="_blank">On an Altar by bluebear</a></li>
+<!--CLOSE 2--></ul></li>
+<!--Level 1--><li><a href="#url">Fav Quotes</a>
+<!--OPEN 2--><ul>
+<!--Level 2--><li><a href="#url">Anais Nin:</a> And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom</li>
+<!--Level 2--><li><a href="#url">Thomas Wolfe:</a> You are what you are, you know what you know, and there are no words for loneliness, black, bitter, aching loneliness, that gnaws the roots of silence in the night...</li>
+<!--CLOSE 2--></ul></li>
+<!--Level 1--><li><a href="#url">questions?</a>
+<!--OPEN 2--><ul>
+<!--Level 2--><li><iframe frameborder="0" border="0" scrolling="no" width="100%" height="149" allowtransparency="true" src="http://www.tumblr.com/ask_form/bored-random.tumblr.com" style"background-color:transparent; overflow:hidden;"></iframe></li>
+<!--CLOSE 2--></ul></li>
+<!--CLOSE LIST--></ul>
+</div><!--sidebar close-->
+</div><!--container close-->
+<!--FOOTER-->
+<div id="footer"><!--footer open-->
+<p>theme by me with a LOT of help from <a href="http://www.cssplay.co.uk/layouts/fixit.html" target="_blank" />Stu Nicholls</a>.</p>
+
+</div><!--footer close-->
+
+
+</body>
+</html>

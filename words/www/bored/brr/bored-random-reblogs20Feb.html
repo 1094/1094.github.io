@@ -1,0 +1,256 @@
+<html>
+
+<head>
+<link href='http://fonts.googleapis.com/css?family=Merienda|Satisfy' rel='stylesheet' type='text/css' />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
+<link rel="icon" href="{Favicon}" />
+<meta name="text:Search Label" content="" />
+<script type="text/javascript" src="http://static.tumblr.com/8oupd2j/BYTm7u5cn/tag_search.js" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" />
+<script src="http://static.tumblr.com/iwtk77u/Yhym2yygt/jquery.imagesloaded.min.js" />
+<script src="http://static.tumblr.com/wgijwsy/Ebfm2v4gy/jquery.masonry.min.js" />
+<script src="http://static.tumblr.com/wgijwsy/u2vm2hxv6/jquery.infinitescroll.min.js" />
+
+<title>{Title} {block:PostSummary}{PostSummary} {/block:PostSummary} </title>
+
+<script>
+
+(function () {
+    var $tumblelog = $('#container');
+    $tumblelog.infinitescroll({
+        navSelector: ".pagination",
+        nextSelector: ".pagination a:last-child",
+        itemSelector: ".post",
+    },
+
+    function (newElements) {
+        var $newElems = $(newElements).css({
+            opacity: 0
+        });
+        $newElems.imagesLoaded(function () {
+            $newElems.animate({
+                opacity: 1
+            });
+            $tumblelog.masonry('appended', $newElems);
+        });
+    });
+    $tumblelog.imagesLoaded(function () {
+        $tumblelog.masonry({
+            columnWidth: function (containerWidth) {
+                return containerWidth / 100;
+            }
+        });
+    });
+})();
+
+</script>
+
+<style type="text/css">
+
+* {margin:0; padding:0; border:0; list-style-type:none;}
+
+body { background:#d8d8d8 url('http://static.tumblr.com/owbd15s/q84kj6ftx/bg.jpg')  center top no-repeat; color:#484848; font:78% 'Merienda'; text-align:center;  margin: 0; }
+
+#container { margin:20px auto 5px; position:fixed; text-align:left; width:100%; height:85%; overflow:scroll;}
+
+input, textarea { background:#e3e3e3; border:1px solid #edebeb; padding: 2px; }
+
+.post { background:#e3e3e3; border:1px solid #edebeb; float:left; height:350px; /*height:auto;*/ margin:5px; overflow:auto; padding:10px; position:relative; width:245px; }
+			
+body#permalink .notes { background:#e3e3e3; border:1px solid #edebeb; display:block; float:left; height:400px; margin:5px; overflow:auto; padding:10px; position:relative; width:245px; }
+
+body#permalink .post { background:#e3e3e3; border:1px solid #edebeb; float:left; height:400px; margin:5px; overflow:auto; padding:10px; position:relative; width:510px; }
+
+.post:hover,.searchresults:hover { background:#d8d8d8; }
+
+body#permalink .image img { border:1px #484848 solid; margin:5px 0; max-width:510px; }
+/* Images*/
+.image img { border:1px #484848 solid; margin:5px 0; max-width:235px; }
+.image img:hover { border:1px #dc5957 solid; }
+/* Video */
+.video .caption { padding-top:10px; }
+/* Quotes */
+blockquote { background:#d8d8d8; color:#dc5957; font-family:'Satisfy'; margin:0; padding:1px; }
+blockquote.quote { font-size:2em; line-height:22px; }
+.source { color:#666; font-size:0.8em; text-align:right; }
+/* Chat */
+.conversation ul li { color:#dc5957; padding:3px; }
+.even { background:#f0f0c5; }
+ol li { list-style:none; margin:0; padding:0 0 5px; }
+/*Links*/
+a { color:#000; }
+a:hover { border-bottom:1px solid #3F3F3F; color:#dc5957; }
+/*Text*/
+h1,h3,h4,h5 { font-family:'Merienda'; font-weight:400; }
+h2 { color:#dc5957; font:normal 1.2em/1.8 'Merienda';}
+h1 { color:#484848; font-family:'Merienda'; font-size:2em; font-weight:400; padding:0 0 9px; }
+/*Header*/
+#header { padding:20px 5px 15px; }
+/*Footer*/
+#footer { bottom:0px; position:fixed; height:40px; width:100%; margin:0px; background:#f5c0b2; border-top:1px solid #f0f0c5; padding:0px; }
+#footer2 { margin:0 auto; position:absolute; width:99%; height:15%; }
+/*Pages*/
+#pages { font-family:'Merienda'; font-size:1.5em; margin:15px 0px; padding:5px; text-align:center; }
+/*two column moments*/
+.left { float:left; margin: 5px 0; width:40%;text-align:left; font-size:.5em; }
+.right { float:right; margin: 5px 0; width:60%;text-align:right; font-size:1em; }
+/*Other*/
+.floatbreak { clear:both; }
+.regular img { max-width: 100%; }
+li { list-style-type:none; display:inline; }
+td { width:92%; background:#f5c0b2; align:right; text-align:right; vertical-align:middle; }
+
+{CustomCSS}
+
+#tumblr_controls{display:none;}
+
+</style>
+
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+  
+</head>
+
+<body {block:permalink}id="permalink"{/block:permalink}>
+
+<div id="container"> <!-- OPEN CONTAINER -->
+
+<div id="header">
+<h1>{Title}</h1>
+<h3>{Description}</h3>
+</div>
+
+{block:Pagination}{/block:Pagination}<!-- Turn the Page -->
+
+{block:Posts}<!-- The Posts -->
+<div class="post">
+
+{block:Regular}<!-- Text -->
+<div class="left">posted {DayOfMonthWithZero}.{ShortMonth}
+<br />{NoteCount} ♥</div>
+<div class="right"><a href="{ReblogURL}" title="reblog">reblog</a> <span style="font-size:.4em;">or</span> <a href="{LikeURL}" title="i like">like</a></div>
+
+<div class="floatbreak"></div>
+
+{block:Title} <h3><a href="{Permalink}">{Title}</a></h3> {/block:Title}
+<div class="regular">{Body}</div>
+
+<div class="left">{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>
+{/block:Regular}
+
+{block:Photo}<!-- Photo -->
+<div class="left">posted {DayOfMonthWithZero}.{ShortMonth}
+<br />{NoteCount} ♥</div>
+<div class="right"><a href="{ReblogURL}" title="reblog">reblog</a> <span style="font-size:.4em;">or</span> <a href="{LikeURL}" title="i like">like</a></div>
+
+<div class="floatbreak"></div>
+
+<div class="photo"><!-- Start class photo-->
+<div class="image">{LinkOpenTag}<img src="{PhotoURL-250}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
+
+<div class="right">{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}</div>
+<div class="left">{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>
+</div><!-- End class photo-->
+{/block:Photo}
+			
+{block:Quote}<!-- Quotes -->
+<div class="left">posted {DayOfMonthWithZero}.{ShortMonth}
+<br />{NoteCount} ♥</div>
+<div class="right"><a href="{ReblogURL}" title="reblog">reblog</a> <span style="font-size:.4em;">or</span> <a href="{LikeURL}" title="i like">like</a></div>
+
+<div class="floatbreak"></div>
+<blockquote class="quote">&#147; {Quote} &#8221;</blockquote>
+
+<div class="right">{block:Source}<div class="source">&mdash; {Source}</div>{/block:Source}</div>
+<div class="left">{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>
+{/block:Quote}
+
+{block:Link}<!-- Links -->
+<div class="left">posted {DayOfMonthWithZero}.{ShortMonth}
+<br />{NoteCount} ♥</div>
+<div class="right"><a href="{ReblogURL}" title="reblog">reblog</a> <span style="font-size:.4em;">or</span> <a href="{LikeURL}" title="i like">like</a></div>
+
+<div class="floatbreak"></div>
+<div class="link"><h1><a href="{URL}" {target}="{target}">{Name} &#187; </a></h1>
+
+<div class="right">{block:Description}<p class="description">{Description}</p>{/block:Description}</div>
+<div class="left">{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>
+</div>
+{/block:Link}
+
+{block:Conversation}<!-- Chat -->
+<div class="left">posted {DayOfMonthWithZero}.{ShortMonth}
+<br />{NoteCount} ♥</div>
+<div class="right"><a href="{ReblogURL}" title="reblog">reblog</a> <span style="font-size:.4em;">or</span> <a href="{LikeURL}" title="i like">like</a></div>
+
+<div class="floatbreak"></div>
+
+<div class="conversation">
+{block:Title}<h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+<ul>
+{block:Lines}<li class="{Alt}">{block:Label}<span class="label">{Label}</span>{/block:Label}{Line}</li>{/block:Lines}
+</ul></div>
+
+<div class="left">{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>
+{/block:Conversation}
+
+{block:Video}<!-- Vid -->
+<div class="left">posted {DayOfMonthWithZero}.{ShortMonth}
+<br />{NoteCount} ♥</div>
+<div class="right"><a href="{ReblogURL}" title="reblog">reblog</a> <span style="font-size:.4em;">or</span> <a href="{LikeURL}" title="i like">like</a></div>
+
+<div class="floatbreak"></div>
+
+<div class="video">
+<div class="videobox">{Video-250}</div>
+<div class="right">{block:Caption}<div class="caption">{Caption}</div> {/block:Caption}</div>
+<div class="left">{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>
+</div>
+{/block:Video}
+				
+{block:Audio}<!-- Sound -->
+<div class="left">posted {DayOfMonthWithZero}.{ShortMonth}
+<br />{NoteCount} ♥</div>
+<div class="right"><a href="{ReblogURL}" title="reblog">reblog</a> <span style="font-size:.4em;">or</span> <a href="{LikeURL}" title="i like">like</a></div>
+
+<div class="floatbreak"></div>
+
+{AudioPlayerGrey}
+
+<div class="right">{block:Caption}<div class="caption">{Caption}</div> {/block:Caption}</div>
+<div class="left">{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>
+{/block:Audio}
+		</div>
+{/block:Posts}<!-- END Posts -->
+
+{PostNotes}<!-- Notes -->
+</div><!-- OPEN CONTAINER -->
+
+
+<div id="footer">
+<div id="footer2">
+
+<div class="left">
+    Theme by <a href="http://joycrusher.tumblr.com">Lauren</a>
+    - tweaked by <a href="http://bored-random.tumblr.com">Me</a>
+    <form action="/search" method="get">
+<input type="text" name="q" value="word+look=search" style="width:100px; height:10px; background-color:#ffffff; color: #000000; font-size: 9px; border: 1px solid #696969;" onFocus="this.value=''"/></form>
+</div>
+
+<div class="right">
+    <table style="width:100%;"><tr>
+        <td><br /><a href="/archive" title="archive">[all]</a>
+        <a href="{RSS}" title="feed">[rss]</a>
+        <a href="/ask" title="ask me">[???s]</a>
+        <a href="/tagged/beauty" title="beauty">[beauty]</a>
+        <a href="/tagged/fandom" title="fandoms">[fandoms]</a>
+        <a href="/tagged/images" title="images">[images]</a>
+        <a href="/tagged/words" title="words">[words]</a>
+        <a href="/" title="home">[home]</a> . . .</td>
+        <td style="width:8%;"><a href="http://www.tumblr.com/follow/bored-random-reblogs"><img src="{PortraitURL-30}" title="follow me ^_^" /></a></td>
+    </tr></table>
+</div>
+
+</div>
+</div>
+
+</body></html>

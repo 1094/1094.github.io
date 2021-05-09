@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> stu nicholls dot com | jQuery Anywidth Flyout Menu </title>
+<meta name="Author" content="Stu Nicholls" />
+<meta name="Keywords" content="style, cascading, sheets, experiments, code, stu, nicholls, javascript, menus, flyout, anywidth, sliding, jQuery" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.stunicholls.com/feed.xml" />
+<meta name="Description" content="Exploring the possibilities of using CSS and javascript " />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="verify-v1" content="n3Dpx4NklZjg5p/Tq7h1q+Oj6Ml83crtkO/PwepVQ6Y=" />
+<meta http-equiv="pics-Label" content='(pics-1.1 "http://www.icra.org/pics/vocabularyv03/" l gen true for "http://stunicholls.com" r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 1) gen true for "http://www.stunicholls.com" r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 1))' />
+<link rel="P3Pv1" href="http://www.stunicholls.com/w3c/p3p.xml" />
+<link rel="meta" href="http://www.stunicholls.com/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+<meta name="robots" content="all" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../favicon.ico" type="image/ico" />
+<link rel="stylesheet" media="all" type="text/css" href="../css/stunicholls.css" />
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+/* ================================================================ 
+Copyright (c) 2011 Stu Nicholls - stunicholls.com. All rights reserved.
+This script and the associated html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+$(document).ready(function () {
+timer=0;
+collapse = 1000;
+$('.menu').height($('.menu > ul').height());
+
+
+	$('.menu li a').mouseover(function (event) {
+		if (this == event.target) {
+			$(this).parent().toggleClass('clicked').children('ul').animate({ width: 'show' });
+			$(this).siblings().children().removeClass('clicked').find('ul').animate({ width: 'hide' });
+			$(this).parent().siblings().removeClass('clicked').find('ul').animate({ width: 'hide' });
+		}
+	}).addClass('fly');
+
+	$('.menu li:not(:has(ul)) a').mouseout(function (event) {
+		if (this == event.target) {
+			$(this).parent().removeClass('clicked');
+			$(this).siblings().children().removeClass('clicked').find('ul').animate({ width: 'hide' });
+			$(this).parent().siblings().removeClass('clicked').find('ul').animate({ width: 'hide' });
+		}
+	}).removeClass('fly');
+
+	$(".menu").mouseover(function() {
+		clearTimeout(timer);
+		});
+
+	$(".menu").mouseout(function() {
+			timer = window.setTimeout(function(){
+				$('.menu li > a').siblings().children().removeClass('clicked').find('ul').fadeOut();
+				$('.menu li > a').parent().siblings().removeClass('clicked').find('ul').fadeOut();
+			}, collapse);
+		}); 
+
+});
+
+</script>
+
+<style type="text/css">
+/* ================================================================ 
+Copyright (c) 2011 Stu Nicholls - stunicholls.com. All rights reserved.
+This stylesheet and the associated html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+.menu {position:relative;}
+
+.menu ul {position:absolute; margin:0; padding:0; list-style:none; white-space:nowrap; background:#abc; border:1px solid #fff; padding:10px 0;
+-o-border-radius: 8px;
+-ms-border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-o-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+-ms-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.menu ul ul {display:none; left:100%; margin-top:-33px; margin-left:-5px;}
+
+.menu li {margin:0; padding:0; list-style:none; display:inline-block; display:inline;}
+
+.menu a {display:block; font:normal 11px verdana,arial,sans-serif; color:#000; line-height:22px; text-decoration:none; padding:0 20px 0 10px;} 
+
+.menu li a.fly {background: url(arrow-right.gif) no-repeat right top;}
+.menu li:hover > a {background-color:#c60; color:#fff;}
+
+
+
+</style>
+
+
+</head>
+
+<div id="content">
+<div class="menu">
+	<ul>
+		<li><a href="#url">Home</a></li>
+		<li><a href="#url">Contact Us</a>
+			<ul>
+				<li><a href="#url">Email</a></li>
+				<li><a href="#url">Telephone</a></li>
+				<li><a href="#url">Online Form</a></li>
+				<li><a href="#url">Snail Mail Address</a></li>
+			</ul>
+		</li>
+		<li><a href="#url">Resort</a>
+			<ul>
+				<li><a href="#url">Ski Hire Facilities</a></li>
+				<li><a href="#url">Main Ski Slopes</a>
+					<ul>
+						<li><a href="#url">Beginners Slopes</a></li>
+						<li><a href="#url">Intermediate Slopes</a></li>
+						<li><a class="fly" href="#url">Advanced Skill Levels</a>
+							<ul>
+								<li><a href="#url">Local</a></li>
+								<li><a href="#url">Nearby</a></li>
+								<li><a href="#url">With instructor</a></li>
+								<li><a href="#url">Snow boarding</a></li>
+							</ul>
+						</li>
+						<li><a href="#url">Expert</a></li>
+					</ul>
+				</li>
+				<li><a href="#url">Night Life</a></li>
+				<li><a href="#url">Restaurants</a>
+					<ul>
+						<li><a href="#url">Snow Hotel</a></li>
+						<li><a href="#url">The Snowman</a></li>
+						<li><a href="#url">Ice Cavern</a></li>
+						<li><a href="#url">Ski Inn</a></li>
+					</ul>
+				</li>
+				<li><a href="#url">Car Hire</a>
+					<ul>
+						<li><a href="#url">From Airport</a></li>
+						<li><a href="#url">In Resort</a></li>
+						<li><a href="#url">Multiple Resorts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#url">Information</a>
+			<ul>
+				<li><a href="#url">Money Exchange</a></li>
+				<li><a href="#url">Resort Essential Information</a>
+					<ul>
+						<li><a href="#url">Lift Passes</a></li>
+						<li><a href="#url">Insurance</a></li>
+						<li><a href="#url">Gear Rental</a>
+							<ul>
+								<li><a href="#url">Boots</a></li>
+								<li><a href="#url">Skis</a></li>
+								<li><a href="#url">Ski Wear</a></li>
+								<li><a href="#url">Goggles</a></li>
+							</ul>
+						</li>
+						<li><a href="#url">Ski Schools</a></li>
+						<li><a href="#url">Snow Report</a></li>
+					</ul>
+				</li>
+				<li><a href="#url">Language</a>
+					<ul>
+						<li><a href="#url">Austrian</a></li>
+						<li><a href="#url">German</a></li>
+						<li><a href="#url">French</a></li>
+						<li><a href="#url">English</a></li>
+					</ul>
+				</li>
+				<li><a href="#url">Short Breaks</a></li>
+			</ul>
+		</li>
+		<li><a href="#url">Surrounding Area</a>
+			<ul>
+				<li><a href="#url">Where to go</a></li>
+				<li><a href="#url">What to do</a></li>
+				<li><a href="#url">Places of interest</a></li>
+				<li><a href="#url">National parks &amp; Museums</a></li>
+			</ul>
+		</li>
+		<li><a href="#url">Privacy</a></li>
+	</ul>
+</div>
+</div>
+
+<div id="footer">
+<div id="foot">
+</div>
+</div>
+
+</div>
+</body>
+</html>

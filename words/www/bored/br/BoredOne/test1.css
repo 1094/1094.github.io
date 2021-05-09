@@ -1,0 +1,31 @@
+/*Links*/
+a:link {color: #FF0000; text-decoration: underline;}
+a:visited {color: #00FF00; text-decoration: line-through;}
+a:hover {color: #FF00FF; font-family: 'Julee', curvise;}
+a:active {color: #0000FF; font-size: 60%;}
+
+
+/*IE Background */
+ * html body {padding:120px 0 50px 0;} * html #container {height:100%; width:100%;} * html #header {height:120px;} * html #footer {height:50px;}
+
+/*Background*/
+body {margin:0; border:0; padding:0; height:100%; max-height:100%; background:#fff; overflow: hidden;}
+
+#container {font-family:'Architects Daughter', cursive; font-size: 11px; position:fixed; top:120px; left:115px; bottom:50px; right:0; overflow:auto; background:#fff; padding:20px; text-align:left;}
+
+#header {font-family: 'Cinzel Decorative', cursive; position:absolute; top:0;  width:100%; height:116px; overflow:hidden; background:#000000; border-bottom:0px; background:url(https://lh6.googleusercontent.com/-H6HvsRVg1Dw/UJ8WtLOSjyI/AAAAAAAAAhg/5MozI6K_kDQ/s577/HeaderImage.png); background-repeat:no-repeat; background-size:100% 100%; background-origin:content-box;}
+
+#rightbar {text-align:center; right:0; bottom: 0; background:rgb(237,228,214); position:absolute; bottom:50px; width:25%; height: 60%; font-family:'Julee', cursive; font-size:10px; z-index:1; overflow:auto;}
+
+#footer {position:absolute; bottom:0; left:0; width:100%; height:45px; overflow:hidden; text-align:right; background:#CEE3F6; border-top:1px solid #53829d; direction:ltr; text-transform:none; text-indent:7px; letter-spacing:1px; word-spacing:2px; color:#eaeaea; font:normal 9px 'Julee', cursive;}
+
+/*SIDE MENU*/
+.menu {position:fixed; top:150px; left:0; }
+
+.menu ul {position:absolute; margin:0; padding:0; list-style:none; white-space:nowrap; background:#abc; border:1px solid #fff; padding:10px 0; -o-border-radius: 8px; -ms-border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -o-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -ms-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); } .menu ul ul {display:none; left:100%; margin-top:-33px; margin-left:-5px;}
+
+.menu li {list-style-type: none; font-family: 'Architects Daughter', cursive; font-size:10px; margin:0; padding:5px; display:inline-block; display:inline;}
+
+.menu a {display:block; font-family: 'Cinzel Decorative', cursive; font-size:9px; color:#000; line-height:15px; text-decoration:none; padding:0 20px 0 10px;}
+
+.menu li a.fly {background: url(arrow-right.gif) no-repeat right top;} .menu li:hover > a {background-color:#c60; color:#fff;}

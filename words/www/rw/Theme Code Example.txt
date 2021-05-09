@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?'; var php_config_log_time_interval = 3000; var php_config_log_url_base = 'http://www.tumblr.com/svc/log/tr'; var php_thash_value = 'ed87eeeb4094a508dfabdd0f8e052bc2'; var php_config_enable_redirect_logging = 1; var php_config_enable_dom_wrappers = 0;</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/pre_tumblelog.js?c1e39598550e346695f667f1277805ee"></script>
+<!DOCTYPE html>
+
+<!--
+*********************************
+*********************************
+*** ------ created by ------- ***
+***  THEMESBYERIS.TUMBLR.COM  ***
+*** ------------------------- ***
+***   Please do not remove    ***
+***  the credit, thank you.   ***
+*********************************
+*********************************
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+
+<meta name="color:Main Title" content="#FFFFFF" />
+<meta name="color:Titles" content="#b38e15" />
+<meta name="color:Text" content="#afa780" />
+<meta name="color:Hover" content="#f1e6b0" />
+<meta name="color:Audio Box" content="#9a1c49" />
+<meta name="color:Audio Border" content="#70590d" />
+
+<meta name="image:Background" content="http://img528.imageshack.us/img528/4010/backgroundts.png" />
+<meta name="image:Square Image" content="http://img853.imageshack.us/img853/979/sebbie.png" />
+<meta name="image:Seal" content="http://img21.imageshack.us/img21/1497/sealu.png" />
+
+<meta name="if:Show RSS Link" content="0" />
+<meta name="if:Show Archive Link" content="0" />
+
+<meta name="text:Title" content="D-6th" />
+<meta name="text:Subtitle" content="" />
+<meta name="text:End Note" content="" />
+
+
+<title>Kuro Theme, Example Page</title>
+<meta name="description" content="Example Page - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nibh sit amet lectus mattis vitae ultricies purus adipiscing. Donec in lectus sapien. Vivamus metus lorem, semper..." />
+<link rel="shortcut icon" href="http://assets.tumblr.com/images/default_avatar_16.gif" />
+<link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif"/>
+<link rel="alternate" type="application/rss+xml" href="http://themesbyeris11.tumblr.com/rss" />
+<link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+
+body {background-color:#072629; margin:0; padding:0; width:100%; height:100%; word-wrap:break-word; font-family:Arial, sans-serif; font-size:11px; background-image:url(http://img528.imageshack.us/img528/4010/backgroundts.png);  color:#afa780;}
+img {border:0; max-width:100%;}
+a {text-decoration:none; color:#afa780;}
+a:hover {color:#f1e6b0;}
+p {margin:0; margin-bottom:5px;}
+ol {margin:3px 0 3px -25px; list-style-type:lower-roman;}
+ul {list-style-type:none; margin:3px 0 3px -36px;}
+ul li:before {content:"♦"; padding-right:5px;}
+blockquote {margin:0 0 0 5px; padding:0 0 0 10px; border-left:dotted 1px #afa780;}
+.clear {clear:both;}
+
+#maintitle {font-family:'Lovers Quarrel', cursive; font-size:100px; width:950px; margin:0 auto; padding-top:10px; height:145px; position:relative; z-index:2; text-shadow: 1px 2px #000000; color:#FFFFFF;}
+#maintitle a {font-weight:normal; color:#FFFFFF;}
+#maintitle .subtitle {font-family:Garamond, Times, serif; font-size:12px; padding-left:15px; opacity:0.7;}
+
+#divider {width:100%; height:1px; margin:15px 0; border-top:solid 1px #b38e15; border-bottom:dotted 1px #afa780;}
+
+h1, h1 a {font-family:'Lovers Quarrel', cursive; font-size:40px; font-weight:normal; margin:0; line-height:30px; color:#b38e15;}
+h1 a:hover {text-decoration:underline;}
+
+#greybox {margin:0 auto; padding:20px; border:solid 1px #333333; position:relative; text-align:center;}
+#greybox .corner1, #greybox .corner2, #greybox .corner3, #greybox .corner4 {position:absolute; z-index:2;}
+#greybox .corner1 {top:-2px; left:-2px;}
+#greybox .corner2 {top:-2px; right:-2px;}
+#greybox .corner3 {bottom:-2px; right:-2px;}
+#greybox .corner4 {bottom:-2px; left:-2px;}
+
+/*********INFO*********/
+#info {background-image:url(http://img513.imageshack.us/img513/3279/bordersides.png); width:977px; margin:0 auto 50px; position:relative;}
+#info #bordertop {position:absolute; top:-119px; width:977px; height:119px;}
+#info #borderbottom {position:absolute; bottom:-112px; width:977px; height:112px;}
+#info #description {float:right; width:497px; padding:30px 40px 30px 0; position:relative; z-index:4;}
+#info #description a {font-family:'Arial Black', sans-serif;}
+#splash {float:right; width:440px; height:440px; margin-right:-19px; margin-bottom:-40px;}
+#splash img {width:440px; height:440px; position:absolute;}
+#splash .background {z-index:2;}
+#splash .foreground {z-index:3;}
+#linkbar {width:939px; height:47px; margin:0 auto; padding-top:9px; background-image:url(http://img713.imageshack.us/img713/9250/linkbar.png); position:relative; z-index:5;}
+#linkbar #links {border-collapse:collapse; height:100%; width:100%; font-family:Times, serif; font-size:20px; text-align:center; color:#f1e6b0;}
+#linkbar #links a {color:#f1e6b0;}
+#linkbar #links a:hover {color:#ffffff; text-shadow: 0 0 10px #f1e6b0;}
+#linkbar #links td.icon {width:14px;}
+#linkbar #links td.originalsite {width:120px; font-size:14px; line-height:14px;}
+#linkbar #seal {position:absolute; top:-25px; left:14px; z-index:6;}
+#bottom {width:925px; min-height:13px; text-align:right; margin:0 auto; padding:5px 0;}
+
+
+/*********POSTS*********/
+#wrapper {width:1036px; margin:0 auto; padding:20px 0 30px; position:relative;}
+#wrapper #post {float:left; background-image:url(http://img19.imageshack.us/img19/8386/postsbordersides.png); width:460px; min-height:100px; margin:28px; position:relative;}
+#wrapper #post #bordertop {position:absolute; top:-15px; width:460px; height:15px;}
+#wrapper #post #borderbottom {position:absolute; bottom:-15px; width:460px; height:15px;}
+
+#content {width:400px; margin:0 auto; padding:15px 0;}
+#content a {font-family:'Arial Black', sans-serif;}
+#content h1 a {font-family:'Lovers Quarrel', cursive; color:#b38e15;}
+h1 a:hover {text-decoration:underline;}
+
+#date, #date a, #date a:hover {text-align:right; margin-bottom:-10px; font-family:Times, serif; font-size:14px; color:#b38e15;}
+#date a:hover {text-decoration:underline;}
+
+#content #media {padding-bottom:10px; width:100%; text-align:center;}
+#content .audiobox {width:360px; margin-bottom:10px;}
+#content #audio {width:207px; padding:4px 4px 1px; margin:0 auto; background-color:#9a1c49; border:solid 1px #70590d;}
+#content .question, #wrapper #post #content .link {width:360px; margin-bottom:10px; text-align:left;}
+
+#content #tags {margin-top:-10px;}
+#content #tags a {font-family:'Arial', serif;}
+
+
+/*********FOOTER*********/
+#footer {background-image:url(http://img513.imageshack.us/img513/3279/bordersides.png); width:977px; margin:0 auto 50px; padding:15px 0; position:relative;}
+#footer #bordertop {position:absolute; top:-15px; width:977px; height:15px;}
+#footer #borderbottom {position:absolute; bottom:-15px; width:977px; height:15px;}
+
+#footer .navigation {width:686px; font-family:Times, serif; font-size:20px; color:#f1e6b0;}
+#footer .navigation a {color:#f1e6b0;}
+#footer .navigation a:hover {color:#ffffff; text-shadow: 0 0 10px #f1e6b0;}
+#footer .navigation .divider {padding:0 10px;}
+
+
+/*********PERMALINK PAGES*********/
+#perma {background-image:url(http://img513.imageshack.us/img513/3279/bordersides.png); width:977px; margin:0 auto 50px; position:relative;}
+#perma #bordertop {position:absolute; top:-119px; width:977px; height:119px;}
+#perma #borderbottom {position:absolute; bottom:-112px; width:977px; height:112px;}
+#perma #content {width:897px;}
+#perma #content .audiobox, #perma #content .question, #perma #content .link {width:857px;}
+#perma #content .link {margin-bottom:10px;}
+#perma #content #media img {max-width:100%; height:auto;}
+
+
+/*********OTHER*********/
+#notecontainer ol {list-style-type:none; margin:0; padding:0;}
+#notecontainer il {margin-bottom:4px;}
+#notecontainer img.avatar {width:16px; height:16px; margin-right:10px; position:relative; top:3px;}
+#notecontainer blockquote {margin-left:30px;}
+
+iframe#tumblr_controls {right:3px!important; position:absolute!important;}
+
+
+
+</style>
+
+<!--lol I have no idea what I'm doing with this jQuery script. I just copied it from http://bit.ly/Jzr14K and removed the infinite scroll part-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://dl.dropbox.com/u/33213779/jquery.masonry.min.js"></script>
+<script>
+$(function(){
+    var $grid = $('#wrapper');
+    $grid.imagesLoaded( function(){
+    	$grid.masonry({itemSelector : '#post'});  	
+    });
+});
+</script>
+
+<!--[if IE]>
+<style type="text/css">
+#linkbar {height:56px; padding-top:0px;}
+</style>
+<![endif]-->
+
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. -->
+<!-- Read more: http://ogp.me/ -->
+<meta property="fb:app_id" content="48119224995" />
+<meta property="og:title" content="Example Page" />
+<meta property="og:url" content="http://themesbyeris11.tumblr.com/example" />
+<meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nibh sit amet lectus mattis vitae ultricies purus adipiscing. Donec in lectus sapien. Vivamus metus lorem, semper in euismod..." />
+<meta property="og:type" content="tumblr-feed:entry" />
+<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS -->
+<meta charset="utf-8">
+<meta name="twitter:url" content="" />
+<meta name="twitter:site" content="tumblr" />
+
+
+<script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/tumblelog.js?92211193937bdacde6d892f6f01442ba"></script><meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+<body>
+
+<div id="maintitle"><a href="/">D-6th<span class="subtitle">A Kuroshitsuji theme</span></a></div>
+
+
+
+
+
+
+
+<div id="perma">
+<img id="bordertop" src="http://img4.imageshack.us/img4/4853/borderfancytop.png" />
+<img id="borderbottom" src="http://img849.imageshack.us/img849/7204/borderfancybottom.png" />
+
+<div id="content">
+
+<div id="divider"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Example Page</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nibh sit amet lectus mattis vitae ultricies purus adipiscing. Donec in lectus sapien. Vivamus metus lorem, semper in euismod quis, suscipit at augue. Proin accumsan eleifend nunc eu pellentesque. Curabitur consequat ultrices pretium. Suspendisse malesuada semper orci at blandit. Nunc non dolor sit amet lacus iaculis vehicula. Vestibulum varius nunc quis libero mattis tempus. Duis lacinia augue et nulla tempor id tempus nibh tristique. Vivamus volutpat, felis pellentesque elementum egestas, elit enim pharetra quam, eu rutrum felis eros id elit. Vestibulum ante magna, tincidunt et accumsan quis, fringilla vitae risus. Donec non rutrum eros. Quisque iaculis lectus a nulla rutrum imperdiet. Nulla tortor leo, gravida vel vehicula at, aliquam eget ipsum. Maecenas molestie semper ligula, sit amet euismod elit malesuada et.</p>
+
+
+
+
+
+
+
+
+<div id="divider"></div>
+
+
+
+
+</div> <!--content-->
+</div> <!--post/perma-->
+
+<br class="clear" />
+
+
+
+
+
+
+<!-- BEGIN TUMBLR CODE -->
+        <iframe src="http://assets.tumblr.com/iframe.html?0aaec77f8c56dc043e43ceaa2914c380&amp;src=http%3A%2F%2Fthemesbyeris11.tumblr.com%2Fexample&amp;lang=en_US&amp;name=themesbyeris11" width="330" height="25" scrolling="no" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe>
+    <!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]-->
+    <img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1357842504&J=eyJibG9naWQiOiI1NTUyMjQzOCJ9&U=CAHHGGBKDI&K=21960c0c2f119204714fc8b2b6f6a8011b76cd3385a5b7ce818bfea5b8df466f"/><!-- END TUMBLR CODE --><iframe src="http://assets.tumblr.com/analytics.html?11" scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0 z-index:9999;" id="ga_target"></iframe>
+
+
+    <script type="text/javascript">
+        __qoptions = _qoptions = { qacct: 'p-19UtqE8ngoZbM' };
+    </script>
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif"
+        style="display:none; border-width:0px; height:1px; width:1px;"/>
+    </noscript>
+
+    <script type="text/javascript">
+        var _comscore = _comscore || [];
+        _comscore.push(
+            { c1: "2", c2: '15742520' }
+        );
+        (function(){ var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+    </script>
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=15742520&cv=2.0&cj=1" /></noscript>
+</body>
+</html>
